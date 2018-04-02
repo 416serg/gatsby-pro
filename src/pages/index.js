@@ -6,7 +6,7 @@ import PostListing from '../components/PostListing'
 const IndexPage = ({ data }) => (
   <div>
     <h2>Posts</h2>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
+    {data.allContentfulBlogPost.edges.map(({ node }) => (
       <PostListing post={node} key={node.id} />
     ))}
   </div>
@@ -22,17 +22,17 @@ export const query = graphql`
         desc
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allContentfulBlogPost {
       edges {
         node {
+          title
           id
-          excerpt
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-          }
-          fields {
-            slug
+          slug
+          createdAt(formatString: "MMMM DD, YYYY")
+          body {
+            childMarkdownRemark {
+              excerpt
+            }
           }
         }
       }
