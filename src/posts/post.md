@@ -3,6 +3,7 @@ title: Welcome to the new Blog
 date: '2018-04-01'
 image: /static/assets/bg.jpeg
 ---
+
 Lorem ipsum dolor amet pop-up before they sold out whatever activated
 charcoal paleo sriracha occupy. Heirloom chambray trust fund sartorial.
 Lo-fi photo booth irony, migas 8-bit fashion axe sustainable listicle
@@ -19,7 +20,7 @@ skateboard hella, street art thundercats poutine hoodie viral.
 * Two
 * Three
 
-![Ruutly Login Page](/static/assets/ruutly_admin_login.png)
+![Ruutly Login Page](/assets/ruutly_admin_login.png)
 
 Lorem ipsum dolor amet pop-up before they sold out whatever activated
 charcoal paleo sriracha occupy. Heirloom chambray trust fund sartorial.
