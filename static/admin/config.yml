@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: 416serg/gatsby-pro
 
 media_folder: static/assets
 
